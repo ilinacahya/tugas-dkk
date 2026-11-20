@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Anggota Baru</title>
+  <!-- Menggunakan Font Awesome untuk ikon input -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+
+  <div class="form-card">
+    <h2 class="form-title">Formulir Pendaftaran Anggota Baru</h2>
+     
+    <!-- Nama Lengkap -->
+      <form action="/action_page.php" method="get">
+      
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+ 
+
+      
+      <div class="form-group form-group-flex">
+        <label for="email">Alamat Email:</label>
+        <div class="input-icon-wrapper">
+          <i class="fa-solid fa-user"></i>
+          <input type="email" id="email" name="email" placeholder="nama@email.com">
+        </div>
+      </div>
+
+      
+      <div class="form-group form-group-flex">
+        <label for="sandi">Kata Sandi:</label>
+        <div class="input-icon-wrapper">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="sandi" name="sandi" value="1234567890">
+        </div>
+      </div>
+
+    
+      <div class="form-group">
+        <div class="section-label">Pilih Minat Utama (Satu):</div>
+        <div class="grid-options">
+          <label><input type="radio" name="minat" value="Pengembangan Web" checked> Pengembangan Web</label>
+          <label><input type="radio" name="minat" value="Desain Grafis"> Desain Grafis</label>
+          <label><input type="radio" name="minat" value="Kriptografi"> Kriptografi</label>
+          <label><input type="radio" name="minat" value="Analis Data"> Analis Data</label>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <div class="section-label">Area Keahlian (Pilih semua yang sesuai):</div>
+        <div class="grid-options">
+          <label><input type="checkbox" name="keahlian" value="HTML/CSS"> HTML/CSS</label>
+          <label><input type="checkbox" name="keahlian" value="JavaScript/Node.js" checked> JavaScript/Node.js</label>
+          <label><input type="checkbox" name="keahlian" value="Python" checked> Python</label>
+          <label><input type="checkbox" name="keahlian" value="Desain UI/UX"> Desain UI/UX</label>
+          <label><input type="checkbox" name="keahlian" value="Pemasaran Digital"> Pemasaran Digital</label>
+        </div>
+      </div>
+
+    
+      <div class="form-group form-group-flex">
+        <label for="negara">Negara Asal:</label>
+        <div style="flex: 1;">
+          <select id="negara" name="negara">
+            <option value="" disabled>Pilih Negara |</option>
+            <option value="Indonesia" selected>Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapura">Singapura</option>
+            <option value="Singapura">korea</option>
+          </select>
+        </div>
+      </div>
+
+      
+
+      <button type="submit" class="btn-submit">[Daftar Sekarang] </button>
+
+
+    </form>
+  </div>
+
+</body>
+</html>
